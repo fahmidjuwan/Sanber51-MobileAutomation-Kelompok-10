@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231202 17:43:38.573" rpa="false" schemaversion="4">
+<suite id="s1" name="Login" source="E:\Automation\Mobile\Fly App Automation\suites\login.robot">
+<test id="s1-t1" name="Login Valid Credential" line="13">
+<kw name="Open Flight Application" library="base">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20231202 17:43:38.889" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:38.927" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:38.961" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231202 17:43:38.991" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231202 17:43:38.991" endtime="20231202 17:43:39.002"/>
+</kw>
+<msg timestamp="20231202 17:43:39.004" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231202 17:43:39.004" level="FAIL">MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))</msg>
+<status status="FAIL" starttime="20231202 17:43:38.822" endtime="20231202 17:43:39.008"/>
+</kw>
+<status status="FAIL" starttime="20231202 17:43:38.822" endtime="20231202 17:43:39.008"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" library="homePage">
+<status status="NOT RUN" starttime="20231202 17:43:39.009" endtime="20231202 17:43:39.009"/>
+</kw>
+<kw name="Input Username On Login Page" library="loginPage">
+<arg>${VALID_USERNAME}</arg>
+<status status="NOT RUN" starttime="20231202 17:43:39.009" endtime="20231202 17:43:39.009"/>
+</kw>
+<kw name="Input Password On Login Page" library="loginPage">
+<arg>${VALID_PASSWORD}</arg>
+<status status="NOT RUN" starttime="20231202 17:43:39.009" endtime="20231202 17:43:39.009"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" library="loginPage">
+<status status="NOT RUN" starttime="20231202 17:43:39.010" endtime="20231202 17:43:39.010"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<status status="NOT RUN" starttime="20231202 17:43:39.010" endtime="20231202 17:43:39.010"/>
+</kw>
+<status status="FAIL" starttime="20231202 17:43:38.820" endtime="20231202 17:43:39.010">MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))</status>
+</test>
+<test id="s1-t2" name="Login InValid Credential" line="21">
+<kw name="Open Flight Application" library="base">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20231202 17:43:39.043" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.077" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.107" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231202 17:43:39.139" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20231202 17:43:39.138" endtime="20231202 17:43:39.144"/>
+</kw>
+<msg timestamp="20231202 17:43:39.146" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231202 17:43:39.147" level="FAIL">MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))</msg>
+<status status="FAIL" starttime="20231202 17:43:39.012" endtime="20231202 17:43:39.149"/>
+</kw>
+<status status="FAIL" starttime="20231202 17:43:39.012" endtime="20231202 17:43:39.149"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" library="homePage">
+<status status="NOT RUN" starttime="20231202 17:43:39.150" endtime="20231202 17:43:39.150"/>
+</kw>
+<kw name="Input Username On Login Page" library="loginPage">
+<arg>${INVALID_USERNAME}</arg>
+<status status="NOT RUN" starttime="20231202 17:43:39.150" endtime="20231202 17:43:39.150"/>
+</kw>
+<kw name="Input Password On Login Page" library="loginPage">
+<arg>${INVALID_PASSWORD}</arg>
+<status status="NOT RUN" starttime="20231202 17:43:39.150" endtime="20231202 17:43:39.150"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" library="loginPage">
+<status status="NOT RUN" starttime="20231202 17:43:39.151" endtime="20231202 17:43:39.151"/>
+</kw>
+<kw name="Close Flight Application" library="base">
+<status status="NOT RUN" starttime="20231202 17:43:39.151" endtime="20231202 17:43:39.151"/>
+</kw>
+<status status="FAIL" starttime="20231202 17:43:39.011" endtime="20231202 17:43:39.151">MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))</status>
+</test>
+<status status="FAIL" starttime="20231202 17:43:38.575" endtime="20231202 17:43:39.152"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231202 17:43:38.889" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:38.927" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:38.961" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.004" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20231202 17:43:39.043" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.077" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.107" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)'))': /wd/hub/session</msg>
+<msg timestamp="20231202 17:43:39.146" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
