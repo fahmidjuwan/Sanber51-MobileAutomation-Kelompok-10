@@ -18,7 +18,7 @@ Login Valid Credential
     Click Sign In Button On Login Page
     Close Flight Application
 
-Login InValid Credential
+Login InValid Credential 
     Open Flight Application
     Click Sign In Button On Home Page
     Input Username On Login Page       ${INVALID_USERNAME} 
