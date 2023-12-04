@@ -3,7 +3,6 @@ Test Case :
 1. Positive case - login
 2. Negative Case - login (wrong username & password)
 
-
 Step :
 1. Open application
 2. Click Sign In Button
