@@ -8,6 +8,7 @@ ${VALID_PASSWORD}        abc123
 ${INVALID_USERNAME}      invalid
 ${INVALID_PASSWORD}      invalid
 
+
 *** Test Cases ***
 
 Login Valid Credential

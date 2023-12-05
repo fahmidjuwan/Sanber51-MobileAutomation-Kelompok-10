@@ -1,0 +1,27 @@
+Test Case :
+
+1. Positive case - login
+2. Positive case - search
+3. Negative case - search
+
+Step Positive case :
+1. Open application
+2. Click Sign In Button
+3. Input Username (valid username)
+4. Input password (valid password)
+5. Click Button Sign In
+6. Click Menu Search
+7. Input Booking ID : DA935 (valid id)
+8. Click Button Search
+9. Close applications
+
+Step Negative case :
+1. Open application
+2. Click Sign In Button
+3. Input Username (valid username)
+4. Input password (valid password)
+5. Click Button Sign In
+6. Click Menu Search
+7. Input Booking ID : invalid (invalid id)
+8. Click Button Search
+9. Close applications
