@@ -15,3 +15,4 @@ Input Password On Login Page
 
 Click Sign In Button On Login Page
     Click Element    ${sign-in-button}
+    #Wait Until Page Contains Element  //*[@text="NGen Digital"]
