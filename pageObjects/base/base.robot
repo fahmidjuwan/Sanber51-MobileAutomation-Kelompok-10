@@ -2,7 +2,7 @@
 Library         AppiumLibrary
 
 *** Variables ***
-${REMOTE_URL}            https://127.0.0.1:4723/wd/hub
+${REMOTE_URL}            http://127.0.0.1:4723/wd/hub
 ${PLATFORM_NAME}         Android
 ${PLATFORM_VERSION}      12.0
 ${DEVICE_NAME}           emulator-5554
